@@ -1,0 +1,356 @@
+<!doctype html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./index.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+    <title>home</title>
+</head>
+
+<body>
+    <div class="content-fluid">
+
+        <!-- Nav section -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top topnav" id="navbar-animation"
+            style="background-color:white;">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/codi.png" alt="CodingKidos" style="max-height:4rem;  border-radius: 0.5rem;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbar-toggler-icon" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="navbar-collapse collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="nav navbar-nav order-0 navbar-right">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#" active="">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>        
+
+        
+        <!-- Intro and Form section -->
+        <div class="container-fluid mt-5" id="intro">
+            <div class="row pt-5">
+                <div class="col-md-7 pt-5" style="text-align:end; justify-content: center;">
+                    <!-- <h2 class="headings">Welcome kids!!!</h2> -->
+                    <img src="./images/kids-using-computer.jpg" alt="kid doing coding" style="max-width: 100%;" class="img-fluid"/>
+                </div>
+                <div class="col-md-5 mt-5 pb-5">
+                    <form action="/" class="px-5 form pb-5" name="submit-to-google-sheet">
+                        <div class="form-group pt-5">
+                            <label for="name">Your Good name:</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="text" class="form-control" id="age" name="age" placeholder="Enter Age">
+                        </div>
+                        <div class="form-group">
+                            <label for="Gender">Gender:</label>
+                            <select class="form-control" name="gender">
+                                <option>Female</option>
+                                <option>Male</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-number">Contact Number:</label>
+                            <input type="tel/text" class="form-control" id="contact-number" name="contact-number" placeholder="Enter Contact Number">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter e-mail">
+                        </div>
+                        <button type="submit" class="btn btn-dark">Book a Free Trail</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- How it works courses and curriculums -->
+        <div class="container-fluid mt-5 pb-5" style=" background-color:rgb(165, 159, 159); ">
+            <div class="row pt-5 pb-2">
+                <h2 class="mx-auto text-light border-bottom border-light text-uppercase">Foundation Course</h2>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-2"></div>
+                <div class="col-md-4 center-align">
+                        <h4 class="curriculum-header">Aptitude preparation</h4>
+                        <div class="curriculum-details">
+                            <p>Course Language: English</p>
+                            <p>TA support</p>
+                            <p>1490 students enrolled</p>
+                            <p>Certificate of completion</p>
+                        </div>
+                </div>
+                <div class="col-md-4 center-align">
+                    <h4 class="curriculum-header">Competitive Programming</h4>
+                    <div class="curriculum-details">
+                        <p>Course Language: English, Hindi</p>
+                        <p>TA support</p>
+                        <p>2034 students enrolled</p>
+                        <p>Certificate of completion</p>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+
+        <!-- Testimonials section -->
+        <div class="container-fluid testimonial-div mt-3 mb-5 pt-5 pb-5">
+
+            <div class="pb-5">
+                <h2 class="headings text-uppercase">what our students say about us</h2>
+            </div>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <!-- slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="card testimonial-card mx-auto">
+                            <img class="card-img-top" src="./images/testimonial1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Jasper</h5>
+                                <p class="card-text">Great work, quite impressed with the faculty and the courses provided.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="card testimonial-card mx-auto">
+                            <img class="card-img-top" src="./images/testimonial2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Austin</h5>
+                                <p class="card-text">Great experience, everyone should try atleast once.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="card testimonial-card mx-auto">
+                            <img class="card-img-top" src="./images/testimonial3.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Alice</h5>
+                                <p class="card-text">Good platform to learn in this fast growing digital world.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="card testimonial-card mx-auto">
+                            <img class="card-img-top" src="./images/testimonial4.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Somya</h5>
+                                <p class="card-text">Loved Coding kids, it has amazing faculty and the free trial booking is great</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- slide 5 -->
+                    <div class="swiper-slide">
+                        <div class="card testimonial-card mx-auto">
+                            <img class="card-img-top" src="./images/testimonial5.png" alt="Card image cap" style="max-height: 16rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Christin</h5>
+                                <p class="card-text">Awesome faculty,cleared all doubts, had fun learning through codingkids.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Our services section -->
+        <div class="container-fluid pt-5 pb-5 border-bottom border-dark" style="background-color: rgb(168, 168, 6);">
+
+            <!-- Title -->
+            <div class="row">
+                <h2 class="mx-auto text-light border-bottom border-light text-uppercase">Our services</h2>
+            </div>
+            <!-- row 1 -->
+            <div class="row pl-5 pr-5 pt-3">
+                <div class="col-sm-6 mx-auto p-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h4 class="card-title text-uppercase" 
+                                style="font-family: 'Arima Madurai', cursive; color: rgb(15, 58, 59);">
+                                Excillent faculty
+                            </h4>
+                        </div>
+                        <img class="card-img-top mx-auto" src="./images/faculty.png" alt="Card image cap" style="width:14rem; height:14rem; justify-content: center;">
+                        <div class="card-body"> 
+                        <p class="card-text">Our faculty is from the best institutes around the world such as IITD, Stanford and more.
+                             They also have work experience in tech giants like Amazon, Facebook, Adobe which makes them exceptional.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 mx-auto p-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h4 class="card-title text-uppercase" 
+                                style="font-family: 'Arima Madurai', cursive; color: rgb(15, 58, 59);">
+                                Get secure with Certificate
+                            </h4>
+                        </div>
+                        <img class="card-img-top mx-auto" src="./images/certificate.png" alt="Card image cap" style="width:14rem; height:14rem; justify-content: center;">
+                        <div class="card-body"> 
+                        <p class="card-text">The student will be provided the certificates which are signed 
+                            by instructors and have our logo on it which will
+                             help them secure their career and increase job prospects with certificates signed by us.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- row 2 -->
+            <div class="row pl-5 pr-5">
+                <div class="col-sm-6 mx-auto p-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h4 class="card-title text-uppercase" 
+                                style="font-family: 'Arima Madurai', cursive; color: rgb(15, 58, 59);">
+                                Course curriculum
+                            </h4>
+                        </div>
+                        <img class="card-img-top mx-auto" src="./images/course.png" alt="Card image cap" style="width:14rem; height:14rem; justify-content: center;">
+                        <div class="card-body"> 
+                        <p class="card-text">Industry leading curriculum designed by expert developers turned educators who have 
+                            invested time to create quality content infused with unique teaching methodology.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 mx-auto p-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h4 class="card-title text-uppercase" 
+                                style="font-family: 'Arima Madurai', cursive; color: rgb(15, 58, 59);">
+                                Get mentor support
+                            </h4>
+                        </div>
+                        <img class="card-img-top mx-auto" src="./images/mentor.png" alt="Card image cap" style="width:14rem; height:14rem; justify-content: center;">
+                        <div class="card-body"> 
+                        <p class="card-text">An incredible mentor support is provided on one on one basis. 
+                            The TA’s are top performers alumni dedicated to support and
+                             clear doubts at any point of time.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Brought to you by section -->
+        <div class="container-fluid mb-5">
+
+            <h2 class="headings pt-5 text-uppercase">Brought to you by the alumni of.....</h2>
+            <div class="row mx-auto pt-4 mt-4">
+                <div class="col-md-2 brands">
+                    <img src="images/iitR.png" class="brand-icons" />
+                    <p>IIT Roorkee</p>
+                </div>
+                <div class="col-md-2 brands">
+                    <img src="images/uconn.png" class="brand-icons" />
+                    <p>UCONN university</p>
+                </div>
+                <div class="col-md-2 brands">
+                    <img src="images/iitdelhi.png" class="brand-icons" />
+                    <p>IIT Delhi</p>
+                </div>
+                <div class="col-md-2 brands">
+                    <img src="images/oracle.png" class="brand-icons" />
+                    <p>Oracle</p>
+                </div>
+                <div class="col-md-2 brands">
+                    <img src="images/adobe.png" class="brand-icons" />
+                    <p>Adobe</p>
+                </div>
+                <div class="col-md-2 brands">
+                    <img src="images/microsoft.png" class="brand-icons" />
+                    <p>Microsoft</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- CopyRight section -->
+        <div class="container-fluid" style="background-color: #A28089;">
+            <div class="row">
+                <div class="col-sm-4 text-light mx-auto pt-2" style="text-align: center;">
+                    <p>
+                        <a class="navbar-brand" href="#">
+                            <img src="./images/logo2.jpg" alt="CodingKidos" style="max-height:4rem; min-width:6rem; max-width:8rem; border-radius: 0.5rem;">
+                        </a>
+                        <span>Copyright © 2020</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script>
+        let swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 30,
+                stretch: 0,
+                depth: 500,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwL'
+        const form = document.forms['submit-to-google-sheet']
+  
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+       })
+    </script>
+ </body>
+</html>
